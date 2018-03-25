@@ -10,4 +10,9 @@ package:
 functions:
   hello:
     handler: hello.ScalaHandler::handle
-
+  helloweb:
+    handler: hello.ApiGatewayScalaHandler::handle
+    events:
+      - http:
+          path: hello
+          method: post

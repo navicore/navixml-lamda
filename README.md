@@ -10,3 +10,7 @@ sbt assembly
 sls deploy
 sls invoke -f hello --data '{"key1":"it works!", "key2":"wow", "key3":"hiyA"}'
 ```
+
+todo: get sane error messages when passing bad input. Currently circe stuff:
+`String: DownField(key1)`
+
