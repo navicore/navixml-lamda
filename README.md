@@ -2,6 +2,8 @@ all credit to https://medium.com/@mkotsur/this-is-why-you-should-consider-using-
 
 based on https://github.com/mkotsur/aws-lambda-scala
 
+I was looking for a way to use Scala in a more Scala way than the Java POJO wrapper approach.  The above blog post shows the way...
+
 ```console
 sbt assembly
 sls deploy
