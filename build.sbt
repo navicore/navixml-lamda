@@ -10,6 +10,7 @@ releaseNextVersion := { ver => Version(ver).map(_.bumpMinor.string).getOrElse("E
 assemblyJarName in assembly := "hello.jar"
 
 libraryDependencies ++= Seq(
+  "io.github.mkotsur" %% "aws-lambda-scala" % "0.0.10",
   "com.amazonaws" % "aws-lambda-java-events" % "1.3.0",
   "com.amazonaws" % "aws-lambda-java-core" % "1.1.0"
 )
