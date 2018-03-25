@@ -1,4 +1,4 @@
-package hello
+package onextent.hello
 
 import io.circe.generic.auto._
 import io.github.mkotsur.aws.handler.Lambda._

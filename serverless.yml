@@ -5,14 +5,21 @@ provider:
   runtime: java8
 
 package:
-  artifact: target/scala-2.12/hello.jar
+  artifact: target/scala-2.12/navixml.jar
 
 functions:
   hello:
-    handler: hello.ScalaHandler::handle
+    handler: onextent.hello.ScalaHandler::handle
   helloweb:
-    handler: hello.ApiGatewayScalaHandler::handle
+    handler: onextent.hello.ApiGatewayScalaHandler::handle
     events:
       - http:
           path: hello
           method: post
+  xmltojson:
+    handler: onextent.navixml.ApiGatewayPizzaXmlHandler::handle
+    events:
+      - http:
+          path: pizza
+          method: post
+
