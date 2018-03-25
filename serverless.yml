@@ -9,7 +9,5 @@ package:
 
 functions:
   hello:
-    handler: hello.Handler
-  helloScala:
     handler: hello.ScalaHandler::handle
 
