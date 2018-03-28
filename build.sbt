@@ -2,7 +2,7 @@ import sbt.Keys._
 import sbt._
 import sbtrelease.Version
 
-name := "navixml"
+name := "navixml-lambda"
 
 resolvers += Resolver.sonatypeRepo("public")
 scalaVersion := "2.12.2"
